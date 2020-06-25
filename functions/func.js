@@ -20,7 +20,23 @@ console.log(myFunction(230, 920));
 // should return a string that interpolates the 2 arguments in such a way 'The name
 // of the user is _ and their age is __'
 
-function maleUser ("fred", 25) {
-    let info = `The name of the user is ${fred} and their age is ${25}`;
-
+function maleUser (userName, userAge) {
+    const name = fred;
+    const age = 25;
+    return `The name of the user is ${userName} and he is ${userAge} years of age`;
 }
+console.log(maleUser);
+
+// Create a function that takes in 1 argument which is a string. If the string length is
+// greater than or equal to 5, return the string 'This word is long'. If the string length
+// is lesser than 5, return the string 'This word is short'
+
+function cars (vehicle) {
+    if (vehicle.length >= 5) {
+        return 'This word is long';
+    } else if (vehicle.length < 5) {
+        return 'This word is short';
+    }
+}
+console.log(cars('corola'));
+console.log(cars('kia'));
